@@ -2,5 +2,16 @@
   "name": "hello-config",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development node src/app",
+    "test": "cross-env NODE_ENV=test mocha"
+  },
+  "dependencies": {
+    "config": "^3.2.4",
+    "cross-env": "^6.0.3",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "js-yaml": "^3.13.1"
+  }
 }
